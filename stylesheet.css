@@ -18,6 +18,10 @@ body {
   margin: 40px 0;
 }
 
+.menu-icon {
+  display: none;
+}
+
 .header-bottom__list {
   display: flex;
   justify-content: space-between;
@@ -138,4 +142,50 @@ footer {
 .footer-right a {
   color:gray;
   text-decoration: none;
+}
+
+@media (max-width: 670px) {
+  .container {
+    margin: 0 20px;
+  }
+
+  .header-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-top {
+    font-size: 42px;
+    text-align: left;
+  }
+
+  .header-bottom {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 100px;
+  }
+
+  .course-list {
+    display: block;
+  }
+
+  .course-list-item {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .footer-container {
+    margin: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .footer-right li {
+    margin: 8px 0;
+  }
 }
